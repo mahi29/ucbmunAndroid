@@ -19,7 +19,7 @@ public class ClubInfo extends Activity {
 		 boolean correct = password.equals(correctPass);
 		 
 		 if (correct) {
-			 Toast.makeText(this,"Welcome!", Toast.LENGTH_SHORT).show();
+			 Toast.makeText(this,"Password Accepted. Welcome!", Toast.LENGTH_SHORT).show();
 			 editText.setText("");
 		 } else {
 			 Toast.makeText(this,"Sorry, wrong password", Toast.LENGTH_SHORT).show();
