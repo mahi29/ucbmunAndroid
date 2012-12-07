@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    <TextView 
+        android:id="@+id/committee"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:alpha="0"
+        android:text="Committees"
+        android:layout_gravity="top|center" />
+    <Button
+	    android:id="@+id/crisis"
+	    android:layout_width="wrap_content"
+	    android:layout_height="0dp"
+	    android:layout_weight="10"
+	    android:text="Crisis Committees"
+	    android:onClick="crisisCommittees"
+	    android:layout_gravity="center_horizontal" />
+    <ImageButton
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:background="#ffffff"
+        android:alpha="0"
+        android:layout_weight="5" />
+	<Button
+	    android:id="@+id/crisis"
+	    android:layout_width="wrap_content"
+	    android:layout_height="0dp"
+	    android:layout_weight="10"
+	    android:text="Joint Crisis Committees"
+	    android:onClick="jcc"
+	    android:layout_gravity="center" />
+    <ImageButton
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:background="#ffffff"
+        android:alpha="0"
+        android:layout_weight="5" />
+	<Button
+	    android:id="@+id/crisis"
+	    android:layout_width="wrap_content"
+	    android:layout_height="0dp"
+	    android:layout_weight="10"
+	    android:text="Specialized Bodies"
+	    android:onClick="specializedBodies"
+	    android:layout_gravity="center" />
+    <ImageButton
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:background="#ffffff"
+        android:alpha="0"
+        android:layout_weight="41" />
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="10"
+	    android:orientation="horizontal" >
+	    <ImageButton
+	        android:id="@+id/committeeIcon"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="fill_parent"
+        	android:src="@drawable/committeeicon"
+        	android:onClick="committeeIcon" />
+	    <ImageButton
+	        android:id="@+id/secretariatIcon"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="fill_parent"
+        	android:src="@drawable/gavel"
+        	android:onClick="gavelIcon" />
+	    <ImageButton
+	        android:id="@+id/rpIcon"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="fill_parent"
+        	android:src="@drawable/rulesicon"
+        	android:onClick="rpIcon" />
+	    <ImageButton
+	        android:id="@+id/hotelIcon"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="fill_parent"
+        	android:src="@drawable/hotelicon"
+        	android:onClick="hotelIcon" />
+	   <ImageButton
+	        android:id="@+id/exploresficon"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="fill_parent"
+        	android:src="@drawable/exploresficon"
+        	android:onClick="explorSFIcon" />	    
+        	
+	</LinearLayout>
+</LinearLayout>

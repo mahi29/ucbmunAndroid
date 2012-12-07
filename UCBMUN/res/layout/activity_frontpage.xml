@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Frontpage" >
+	<ImageView
+	    android:id="@+id/logo"
+		android:layout_width="fill_parent"
+		android:layout_height="0dp"
+		android:layout_weight="4"
+		android:background="#ffffff"
+		android:gravity="center_vertical|top"
+		android:src="@drawable/ucbmunc"/>
+	    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+	    android:background="#ffffff"
+        android:layout_weight="4.00"
+        android:gravity="center_horizontal|center"
+        android:text="Welcome to UCBMUNC 2013" />
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1"
+	    android:orientation="horizontal" >
+	    <Button
+	        android:id="@+id/conference"
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1"
+	        android:text="Conference"
+	        android:onClick="conferenceButton" />
+	    <Button
+	        android:id="@+id/club"
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1"
+	        android:text="Club"
+	        android:onClick="clubButton" />
+     </LinearLayout>
+
+</LinearLayout>
