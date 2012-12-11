@@ -9,7 +9,8 @@
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_weight="10"
-        android:alpha="0"
+        android:textSize="30sp"
+        android:textColor="@color/yale_blue"
         android:text="Committees"
         android:layout_gravity="top|center" />
     <Button
@@ -19,6 +20,7 @@
 	    android:layout_weight="10"
 	    android:text="Crisis Committees"
 	    android:onClick="crisisCommittees"
+	    android:longClickable="true"
 	    android:layout_gravity="center_horizontal" />
     <ImageButton
         android:layout_width="fill_parent"
@@ -93,7 +95,7 @@
 	        android:layout_weight="1"
 	        android:layout_height="fill_parent"
         	android:src="@drawable/exploresficon"
-        	android:onClick="explorSFIcon" />	    
+        	android:onClick="exploreSFIcon" />	    
         	
 	</LinearLayout>
 </LinearLayout>

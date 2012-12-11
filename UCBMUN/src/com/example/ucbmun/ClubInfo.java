@@ -1,6 +1,7 @@
 package com.example.ucbmun;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -21,6 +22,8 @@ public class ClubInfo extends Activity {
 		 if (correct) {
 			 Toast.makeText(this,"Password Accepted. Welcome!", Toast.LENGTH_SHORT).show();
 			 editText.setText("");
+			 Intent i = new Intent(this, ClubFront.class);
+			 startActivity(i);
 		 } else {
 			 Toast.makeText(this,"Sorry, wrong password", Toast.LENGTH_SHORT).show();
 			 editText.setText("");

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+<TextView
+    android:layout_width="fill_parent"
+    android:layout_height="0dp"
+    android:layout_weight="10"
+    android:text="San Francisco"
+    android:textColor="@color/yale_blue"
+    android:gravity="center"
+    android:textSize="30sp" />    
+<ImageView
+    android:layout_width="fill_parent"
+    android:layout_height="0dp"
+    android:layout_weight="81" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="10"
+	    android:orientation="horizontal" >
+	    <ImageButton
+	        android:id="@+id/committeeIcon"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="fill_parent"
+        	android:src="@drawable/committeeicon"
+        	android:onClick="committeeIcon" />
+	    <ImageButton
+	        android:id="@+id/secretariatIcon"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="fill_parent"
+        	android:src="@drawable/gavel"
+        	android:onClick="gavelIcon" />
+	    <ImageButton
+	        android:id="@+id/rpIcon"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="fill_parent"
+        	android:src="@drawable/rulesicon"
+        	android:onClick="rpIcon" />
+	    <ImageButton
+	        android:id="@+id/hotelIcon"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="fill_parent"
+        	android:src="@drawable/hotelicon"
+        	android:onClick="hotelIcon" />
+	   <ImageButton
+	        android:id="@+id/exploresficon"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="fill_parent"
+        	android:src="@drawable/exploresficon"
+        	android:onClick="exploreSFIcon" />	    
+        	
+	</LinearLayout>
+</LinearLayout>

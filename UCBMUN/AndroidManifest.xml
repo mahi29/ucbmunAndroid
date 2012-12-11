@@ -13,13 +13,30 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+        
         <activity
             android:name="com.example.ucbmun.ClubInfo"
-            android:theme="@android:style/Theme.NoTitleBar" >	
+            android:theme="@android:style/Theme.NoTitleBar" >	          
     	</activity>
     	<activity
-    	    android:name=".CommitteeInfo"
-    	    android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+            android:name="com.example.ucbmun.SecretariatInfo">
+    	</activity>
+    	<activity
+            android:name="com.example.ucbmun.RP">
+    	</activity>
+    	<activity
+            android:name="com.example.ucbmun.Hotel">
+    	</activity>
+    	<activity
+            android:name="com.example.ucbmun.SF">
+    	</activity>    	    	    	
+    	<activity
+    	    android:name=".ClubFront"
+    	    android:theme="@android:style/Theme.NoTitleBar">
+    	</activity>
+    	<activity
+    	    android:name=".CommitteeInfo">
+    	</activity>
         <activity
             android:name="com.example.ucbmun.Frontpage"
             android:label="@string/app_name"
