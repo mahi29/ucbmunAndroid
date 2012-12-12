@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="wrap_content" android:layout_height="fill_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+ <TextView
+     android:id="@+id/sfoTitle"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:textSize="17sp"
+     android:text="San Francisco Airport"
+     android:textColor="@color/yale_blue" 
+     android:textStyle="bold" />
+ <TextView
+     android:id="@+id/bartdirections"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:textSize="12sp" />
+ <ImageView
+     android:layout_width="fill_parent"
+     android:layout_height="15dp"/>
+ <TextView
+     android:id="@+id/oakTitle"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:textSize="17sp"
+     android:text="Oakland Airport"
+     android:textColor="@color/yale_blue" 
+     android:textStyle="bold" />
+  <TextView
+     android:id="@+id/oakdirections"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:textSize="12sp" />
+  <ImageView
+     android:layout_width="fill_parent"
+     android:layout_height="15dp"/>
+ <TextView
+     android:id="@+id/laTitle"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:textSize="17sp"
+     android:text="Interstate 5 North Freeway"
+     android:textColor="@color/yale_blue" 
+     android:textStyle="bold" />
+  <TextView
+     android:id="@+id/i5directions"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:textSize="12sp" />
+  <ImageView
+     android:layout_width="fill_parent"
+     android:layout_height="15dp"/>
+ <TextView
+     android:id="@+id/davTitle"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:textSize="17sp"
+     android:text="Interstate 80 West Freeway"
+     android:textColor="@color/yale_blue" 
+     android:textStyle="bold" />
+  <TextView
+     android:id="@+id/i80directions"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:textSize="12sp" />
+</LinearLayout>
+</ScrollView>

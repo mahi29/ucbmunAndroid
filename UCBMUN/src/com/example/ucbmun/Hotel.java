@@ -47,4 +47,12 @@ public class Hotel extends Activity {
 		Intent i = new Intent(this,SF.class);
 		startActivity(i);
 	}
+	public void startMaps(View v) {
+		Intent i = new Intent(this, HotelMap.class);
+		startActivity(i);
+	}
+	public void directions(View v) {
+		Intent i = new Intent(this, Directions.class);
+		startActivity(i);
+	}
 }
