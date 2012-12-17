@@ -1,21 +1,266 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#ffffff"
-    android:orientation="vertical" >
-<TextView
-    android:layout_width="fill_parent"
-    android:layout_height="0dp"
-    android:layout_weight="10"
-    android:text="Secretariat"
-    android:textColor="@color/yale_blue"
-    android:gravity="center"
-    android:textSize="30sp" />    
-<ImageView
-    android:layout_width="fill_parent"
-    android:layout_height="0dp"
-    android:layout_weight="81" />
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical" >
+  <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="fill_parent" 
+   	    android:layout_weight="91"
+	    android:layout_height="0dp">
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent"
+		android:layout_height="match_parent"
+	    android:background="#ffffff">
+		 <TextView
+		    android:id="@+id/title"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:text="Secretariat"
+		    android:textColor="@color/yale_blue"
+		    android:gravity="center"
+		    android:textSize="30sp" /> 	       
+		 <ImageView
+		     android:id="@+id/sid"
+		     android:layout_width="75dp"
+		     android:layout_height="75dp"
+		     android:src="@drawable/sid"
+		     android:layout_below="@id/title" />
+		 <TextView 
+		     android:id="@+id/sidname"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:text="Siddharth Dhurka"
+		     android:textSize="20sp"
+		     android:textStyle="bold"
+		     android:linksClickable="true"
+		     android:onClick="sidBio"
+		     android:layout_below="@id/title"
+		     android:layout_toRightOf="@id/sid"/>
+		  <TextView
+		     android:id="@+id/sidsg"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:text="Secretary General"
+		     android:layout_toRightOf="@id/sid"
+		     android:layout_below="@id/sidname"/>
+		
+		 <ImageView
+		     android:id="@+id/adam"
+		     android:layout_width="75dp"
+		     android:layout_height="75dp"
+		     android:layout_marginTop="25dp"
+		     android:src="@drawable/adam"
+		     android:layout_below="@id/sid" />
+		 <TextView 
+		     android:id="@+id/adamname"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:text="Adam Bradford Spaulding"
+		     android:textSize="20sp"
+		     android:textStyle="bold"
+		     android:layout_alignTop="@id/adam"
+		     android:layout_toRightOf="@id/adam"/>
+		 <TextView
+		     android:id="@+id/adamdsg"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:text="Deputy Secretary General"
+		     android:layout_toRightOf="@id/adam"
+		     android:layout_below="@id/adamname"/>
+		 
+		  <ImageView
+		     android:id="@+id/stephanie"
+		     android:layout_width="75dp"
+		     android:layout_height="75dp"
+		     android:layout_marginTop="25dp"
+		     android:src="@drawable/stephanie"
+		     android:layout_below="@id/adam" />
+		 <TextView 
+		     android:id="@+id/stephaniename"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:text="Stephanie Peña"
+		     android:textSize="20sp"
+		     android:textStyle="bold"
+		     android:layout_alignTop="@id/stephanie"
+		     android:layout_toRightOf="@id/stephanie"/>
+		 <TextView
+		     android:id="@+id/usgc"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:text="Under-Secretary General of Crisis"
+		     android:layout_toRightOf="@id/stephanie"
+		     android:layout_below="@id/stephaniename"/>
+		 
+		   <ImageView
+		     android:id="@+id/irina"
+		     android:layout_width="75dp"
+		     android:layout_height="75dp"
+		     android:layout_marginTop="25dp"
+		     android:src="@drawable/irina"
+		     android:layout_below="@id/stephanie" />
+		 <TextView 
+		     android:id="@+id/irinaname"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:text="Irina Goga"
+		     android:textSize="20sp"
+		     android:textStyle="bold"
+		     android:layout_alignTop="@id/irina"
+		     android:layout_toRightOf="@id/irina"/>
+		 <TextView
+		     android:id="@+id/irinausgsb"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:text="Under-Secretary General of Specialized Bodies"
+		     android:layout_toRightOf="@id/irina"
+		     android:layout_below="@id/irinaname"/>
+		 
+		 <ImageView
+		     android:id="@+id/kareem"
+		     android:layout_width="75dp"
+		     android:layout_height="75dp"
+		     android:layout_marginTop="25dp"
+		     android:src="@drawable/kareem"
+		     android:layout_below="@id/irina" />
+		 <TextView 
+		     android:id="@+id/kareemname"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:text="Kareem Ascha"
+		     android:textSize="20sp"
+		     android:textStyle="bold"
+		     android:layout_alignTop="@id/kareem"
+		     android:layout_toRightOf="@id/kareem"/>
+		 <TextView
+		     android:id="@+id/kareemdoc"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:text="Director of Crisis"
+		     android:layout_toRightOf="@id/kareem"
+		     android:layout_below="@id/kareemname"/>
+		 
+		 <ImageView
+			 android:id="@+id/bo"
+		     android:layout_width="75dp"
+		     android:layout_height="75dp"
+		     android:layout_marginTop="25dp"
+		     android:src="@drawable/bo"
+		     android:layout_below="@id/kareem" />
+		 <TextView 
+		     android:id="@+id/boname"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:text="Bo-Peter Laneen"
+		     android:textSize="20sp"
+		     android:textStyle="bold"
+		     android:layout_alignTop="@id/bo"
+		     android:layout_toRightOf="@id/bo"/>
+		 <TextView
+		     android:id="@+id/bocosi"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:text="Chief of Staff - Internal"
+		     android:layout_toRightOf="@id/bo"
+		     android:layout_below="@id/boname"/>
+		
+		 <ImageView
+		     android:id="@+id/ozzy"
+		     android:layout_width="75dp"
+		     android:layout_height="75dp"
+		     android:layout_marginTop="25dp"
+		     android:src="@drawable/ozzie"
+		     android:layout_below="@id/bo" />
+		 <TextView 
+		     android:id="@+id/ozziename"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:text="Ahmed 'Ozzy' Osman"
+		     android:textSize="20sp"
+		     android:textStyle="bold"
+		     android:layout_alignTop="@id/ozzy"
+		     android:layout_toRightOf="@id/ozzy"/>
+		 <TextView
+		     android:id="@+id/ozziecose"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:text="Chief of Staff-External"
+		     android:layout_toRightOf="@id/ozzy"
+		     android:layout_below="@id/ozziename"/>
+		 
+		<ImageView
+		     android:id="@+id/henry"
+		     android:layout_width="75dp"
+		     android:layout_height="75dp"
+		     android:layout_marginTop="25dp"
+		     android:src="@drawable/henry"
+		     android:layout_below="@id/ozzy" />
+		 <TextView 
+		     android:id="@+id/henryname"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:text="Henry Grunzweig"
+		     android:textSize="20sp"
+		     android:textStyle="bold"
+		     android:layout_alignTop="@id/henry"
+		     android:layout_toRightOf="@id/henry"/>
+		 <TextView
+		     android:id="@+id/henrydbr"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:text="Director of Business Relations"
+		     android:layout_toRightOf="@id/henry"
+		     android:layout_below="@id/henryname"/>
+		 
+		<ImageView
+		     android:id="@+id/xio"
+		     android:layout_width="75dp"
+		     android:layout_height="75dp"
+		     android:layout_marginTop="25dp"
+		     android:src="@drawable/xio"
+		     android:layout_below="@id/henry" />
+		 <TextView 
+		     android:id="@+id/xioname"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:text="Paige Xio Alvarez"
+		     android:textSize="20sp"
+		     android:textStyle="bold"
+		     android:layout_alignTop="@id/xio"
+		     android:layout_toRightOf="@id/xio"/>
+		 <TextView
+		     android:id="@+id/xiodbr"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:text="Director of Business Relations"
+		     android:layout_toRightOf="@id/xio"
+		     android:layout_below="@id/xioname"/>
+		 
+		<ImageView
+		     android:id="@+id/ravi"
+		     android:layout_width="75dp"
+		     android:layout_height="75dp"
+		     android:layout_marginTop="25dp"
+		     android:src="@drawable/ravi"
+		     android:layout_below="@id/xio" />
+		 <TextView 
+		     android:id="@+id/raviname"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:text="Ravi Punj"
+		     android:textSize="20sp"
+		     android:textStyle="bold"
+		     android:layout_alignTop="@id/ravi"
+		     android:layout_toRightOf="@id/ravi"/>
+		 <TextView
+		     android:id="@+id/ravidot"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:text="Director of Technology"
+		     android:layout_toRightOf="@id/ravi"
+		     android:layout_below="@id/raviname"/>
+	 </RelativeLayout>
+	 </ScrollView>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	    android:layout_width="fill_parent"
 	    android:layout_height="0dp"

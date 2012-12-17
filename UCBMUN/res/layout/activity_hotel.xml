@@ -4,6 +4,33 @@
     android:layout_height="match_parent"
     android:background="#ffffff"
     android:orientation="vertical" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="10"
+    android:background="#ffffff"
+    android:orientation="horizontal" >
+	<Button
+	    android:id="@+id/maps"
+	    android:layout_width="0dp"
+	    android:layout_height="fill_parent"
+	    android:layout_weight="10"
+	    android:text="Map"
+	    android:layout_gravity="left"
+	  	android:onClick="startMaps"/>
+	<ImageView
+	    android:layout_height="fill_parent"
+	    android:layout_width="0dp"
+	    android:layout_weight="1"/>
+	<Button
+	    android:id="@+id/directions"
+	    android:layout_width="0dp"
+	    android:layout_height="fill_parent"
+	    android:layout_weight="10"
+	    android:text="Directions"
+	    android:layout_gravity="right"
+	  	android:onClick="directions"/>
+</LinearLayout>
 <TextView
     android:layout_width="fill_parent"
     android:layout_height="0dp"
@@ -15,7 +42,7 @@
 <ImageView
     android:layout_width="fill_parent"
     android:layout_height="0dp"
-    android:layout_weight="81" />
+    android:layout_weight="71" />
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	    android:layout_width="fill_parent"
 	    android:layout_height="0dp"

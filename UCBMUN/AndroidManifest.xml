@@ -18,6 +18,8 @@
         <activity
             android:name=".Directions"/>
         <activity
+            android:name=".SiddharthBio" />
+        <activity
             android:name=".HotelMap"
            	android:theme="@android:style/Theme.NoTitleBar"/>
         <activity
@@ -46,6 +48,7 @@
     	<activity
     	    android:name=".CommitteeInfo">
     	</activity>
+		<activity android:name=".ConferenceTemplate" />
         <activity
             android:name="com.example.ucbmun.Frontpage"
             android:label="@string/app_name"

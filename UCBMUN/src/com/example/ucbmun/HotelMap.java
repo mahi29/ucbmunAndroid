@@ -24,15 +24,22 @@ public class HotelMap extends MapActivity {
 		MapView mV = (MapView) findViewById(R.id.mapview);
 		mV.setBuiltInZoomControls(true);
         drawable = this.getResources().getDrawable(R.drawable.yellowpin);
+        
         itemizedoverlay = new MapSupport(drawable, this);
         mC = mV.getController();
         mC.setZoom(14);
         mapOverlays = mV.getOverlays();
+        
         GeoPoint hotel = new GeoPoint(37795143,-122404312);
         OverlayItem oi = new OverlayItem(hotel, "Hilton","UCBMUNC 2013");
         itemizedoverlay.addOverlay(oi);
-        mapOverlays.add(itemizedoverlay);
         
+        /*GeoPoint bart  = new GeoPoint(37789020,-122401759);
+        OverlayItem b = new OverlayItem(bart, "Montgomery BART","598 Market St");
+        b.setMarker(this.getResources().getDrawable(R.drawable.bart));
+        itemizedoverlay.addOverlay(b);*/
+        
+        mapOverlays.add(itemizedoverlay);
         mC.setCenter(hotel);
 	}
 	@Override
